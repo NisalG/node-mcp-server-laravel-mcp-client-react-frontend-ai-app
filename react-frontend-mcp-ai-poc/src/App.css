@@ -1,0 +1,209 @@
+.App {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e0e7ff 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+nav a {
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background: #6366f1;
+  color: #fff;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+body, #root {
+  height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Vertically center */
+  align-items: center;       /* Horizontally center */
+  width: 100%;
+}
+
+.proposal-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(100, 116, 139, 0.08);
+  padding: 2rem 2.5rem;
+  max-width: 480px;
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proposal-container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  color: #3730a3;
+  text-align: center;
+}
+
+.proposal-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.proposal-container label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #334155;
+  display: block;
+}
+
+.proposal-container input[type="text"],
+.proposal-container textarea,
+.proposal-container select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f8fafc;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-top: 0.2rem;
+}
+
+.proposal-container textarea {
+  min-height: 120px;
+}
+
+.proposal-container button[type="submit"],
+.proposal-actions button {
+  margin-top: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.proposal-container button[disabled],
+.proposal-actions button[disabled] {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+
+.proposal-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.preview-container {
+  margin-top: 1.5rem;
+  width: 100%;
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.preview-container h2 {
+  margin-top: 0;
+  color: #334155;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 0 0.5rem;
+  }
+  nav a {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+  .proposal-container {
+    padding: 1rem 0.5rem;
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .preview-container {
+    padding: 0.7rem;
+    font-size: 0.97rem;
+  }
+}
