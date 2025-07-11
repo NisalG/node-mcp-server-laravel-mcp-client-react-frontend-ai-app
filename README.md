@@ -787,7 +787,7 @@ URL: [http://localhost:3000](http://localhost:3000)
 3. **Sign up for an account**: You'll typically need to create a developer account ([platform.deepseek.com](http://platform.deepseek.com))  
 4. **Generate an API key**: There should be an option to create new API keys in your account dashboard  
    1. MCP-POC   
-   2. sk-46a593a4c30d40b78961687d0545fa5e
+   2. sk-xxxxxxxxxxxxxxxxxxxxxx
 
 **Gemini (Google)**
 
